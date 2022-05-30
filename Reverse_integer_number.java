@@ -1,13 +1,16 @@
-package practice_1;
+package com.Practice;
+
 import java.util.Scanner;
 
 public class Reverse_integer_number {
+
 	static Scanner myScanner = new Scanner(System.in);
 	public static void main(String[] args) {
 
-		int inputNumber, reverseNumber = 0 ;
+		int inputNumber; 
 		System.out.print("Enter your integer number : ");
 		inputNumber = myScanner.nextInt();
+		Integer reverseNumber = 0 ;
 		
 		while(inputNumber != 0)
 	      {

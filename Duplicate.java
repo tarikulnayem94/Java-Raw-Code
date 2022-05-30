@@ -1,9 +1,10 @@
-package practice_1;
+package com.Practice;
+
 public class Duplicate {
 
-	public static void main(String[] args)
-	{ 
-		int values [] = {10, 5, 10, 5, 5, 10};
+	public static void main(String[] args) 
+	{
+		int values [] = {10, 15, 10, 5, 5, 15};
 		int dulicateCount = 0 ;
 		
 		for (int i = 0; i < values.length; i++) 
@@ -17,7 +18,6 @@ public class Duplicate {
 			}
 		}
 		System.out.println(dulicateCount);
-	}
 
-	
+	}
 }

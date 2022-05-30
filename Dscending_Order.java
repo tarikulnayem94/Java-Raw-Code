@@ -1,11 +1,9 @@
-package practice_1;
-
+package com.Practice;
 public class Dscending_Order {
-
 	public static void main(String[] args) 
 	{
 		int i, j, temp;
-		int values [] = {5, 10, 15, 20, 30};
+		int values [] = {5, 10, 9, 15, 20, 30};
 		
 		for (i = 0; i < values.length; i++) 
 		{
@@ -13,18 +11,17 @@ public class Dscending_Order {
 			{
 				if (values[i] < values[j]) 
 				{
-					temp = values[j];
-					values[j] = values [i];
-					temp = values[i];				
+					temp = values[i];                //  temp = 5
+					values[i] = values [j];          //  values[i] = 10
+					values[j] = temp;		         // values[j] = 5
 				}
-			}
-			
+			}		
 		}
-		for (i = 0; i < values.length; i++) 
-		{
+		System.out.print("des_order : ");
 		
-			System.out.println("des_order : " + values[i]);
+		for (i = 0; i < values.length; i++) 
+		{	
+			System.out.print(+ values[i] + ", ");
 		}
 	}
-
 }
